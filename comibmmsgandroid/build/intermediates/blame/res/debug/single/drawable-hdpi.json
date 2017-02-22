@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\AndroidStudioProjects\\EmqttDemo\\comibmmsgandroid\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\arrow.png",
+        "source": "D:\\AndroidStudioProjects\\EmqttDemo\\comibmmsgandroid\\src\\main\\res\\drawable-hdpi\\arrow.png"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\EmqttDemo\\comibmmsgandroid\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher.png",
+        "source": "D:\\AndroidStudioProjects\\EmqttDemo\\comibmmsgandroid\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    }
+]

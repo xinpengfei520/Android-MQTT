@@ -1,0 +1,104 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From com.ibm.msg.android:
+* arrow-web.png
+* ic_launcher-web.png
+* proguard-project.txt
+From mqttAndroidLib:
+* .DS_Store
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:18.+
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In mqttAndroidLib:
+* AndroidManifest.xml => mqttAndroidLib\src\main\AndroidManifest.xml
+* res\ => mqttAndroidLib\src\main\res\
+* src\ => mqttAndroidLib\src\main\java\
+* src\.DS_Store => mqttAndroidLib\src\main\resources\.DS_Store
+* src\org\eclipse\paho\client\mqttv3\internal\nls\logcat.properties => mqttAndroidLib\src\main\resources\org\eclipse\paho\client\mqttv3\internal\nls\logcat.properties
+* src\org\eclipse\paho\client\mqttv3\internal\nls\messages.properties => mqttAndroidLib\src\main\resources\org\eclipse\paho\client\mqttv3\internal\nls\messages.properties
+* src\org\eclipse\paho\client\mqttv3\internal\nls\messages_cs.properties => mqttAndroidLib\src\main\resources\org\eclipse\paho\client\mqttv3\internal\nls\messages_cs.properties
+* src\org\eclipse\paho\client\mqttv3\internal\nls\messages_de.properties => mqttAndroidLib\src\main\resources\org\eclipse\paho\client\mqttv3\internal\nls\messages_de.properties
+* src\org\eclipse\paho\client\mqttv3\internal\nls\messages_es.properties => mqttAndroidLib\src\main\resources\org\eclipse\paho\client\mqttv3\internal\nls\messages_es.properties
+* src\org\eclipse\paho\client\mqttv3\internal\nls\messages_fr.properties => mqttAndroidLib\src\main\resources\org\eclipse\paho\client\mqttv3\internal\nls\messages_fr.properties
+* src\org\eclipse\paho\client\mqttv3\internal\nls\messages_hu.properties => mqttAndroidLib\src\main\resources\org\eclipse\paho\client\mqttv3\internal\nls\messages_hu.properties
+* src\org\eclipse\paho\client\mqttv3\internal\nls\messages_it.properties => mqttAndroidLib\src\main\resources\org\eclipse\paho\client\mqttv3\internal\nls\messages_it.properties
+* src\org\eclipse\paho\client\mqttv3\internal\nls\messages_ja.properties => mqttAndroidLib\src\main\resources\org\eclipse\paho\client\mqttv3\internal\nls\messages_ja.properties
+* src\org\eclipse\paho\client\mqttv3\internal\nls\messages_ko.properties => mqttAndroidLib\src\main\resources\org\eclipse\paho\client\mqttv3\internal\nls\messages_ko.properties
+* src\org\eclipse\paho\client\mqttv3\internal\nls\messages_pl.properties => mqttAndroidLib\src\main\resources\org\eclipse\paho\client\mqttv3\internal\nls\messages_pl.properties
+* src\org\eclipse\paho\client\mqttv3\internal\nls\messages_pt_BR.properties => mqttAndroidLib\src\main\resources\org\eclipse\paho\client\mqttv3\internal\nls\messages_pt_BR.properties
+* src\org\eclipse\paho\client\mqttv3\internal\nls\messages_ru.properties => mqttAndroidLib\src\main\resources\org\eclipse\paho\client\mqttv3\internal\nls\messages_ru.properties
+* src\org\eclipse\paho\client\mqttv3\internal\nls\messages_zh_CN.properties => mqttAndroidLib\src\main\resources\org\eclipse\paho\client\mqttv3\internal\nls\messages_zh_CN.properties
+* src\org\eclipse\paho\client\mqttv3\internal\nls\messages_zh_TW.properties => mqttAndroidLib\src\main\resources\org\eclipse\paho\client\mqttv3\internal\nls\messages_zh_TW.properties
+* src\org\eclipse\paho\client\mqttv3\logging\jsr47min.properties => mqttAndroidLib\src\main\resources\org\eclipse\paho\client\mqttv3\logging\jsr47min.properties
+* src\org\eclipse\paho\client\mqttv3\logging\package.html => mqttAndroidLib\src\main\resources\org\eclipse\paho\client\mqttv3\logging\package.html
+* src\org\eclipse\paho\client\mqttv3\package.html => mqttAndroidLib\src\main\resources\org\eclipse\paho\client\mqttv3\package.html
+* src\org\eclipse\paho\client\mqttv3\persist\package.html => mqttAndroidLib\src\main\resources\org\eclipse\paho\client\mqttv3\persist\package.html
+* src\org\eclipse\paho\client\mqttv3\util\package.html => mqttAndroidLib\src\main\resources\org\eclipse\paho\client\mqttv3\util\package.html
+In com.ibm.msg.android:
+* AndroidManifest.xml => comibmmsgandroid\src\main\AndroidManifest.xml
+* lint.xml => comibmmsgandroid\lint.xml
+* res\ => comibmmsgandroid\src\main\res\
+* src\ => comibmmsgandroid\src\main\java\
+* src\com\ibm\msg\android\package.html => comibmmsgandroid\src\main\resources\com\ibm\msg\android\package.html
+* src\com\ibm\msg\android\service\package.html => comibmmsgandroid\src\main\resources\com\ibm\msg\android\service\package.html
+
+Missing Android Support Repository:
+-----------------------------------
+Some useful libraries, such as the Android Support Library, are
+installed from a special Maven repository, which should be installed
+via the SDK manager.
+
+It looks like this library is missing from your SDK installation at:
+null
+
+To install it, open the SDK manager, and in the Extras category,
+select "Android Support Repository". You may also want to install the
+"Google Repository" if you want to use libraries like Google Play
+Services.
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

@@ -1,0 +1,7 @@
+<manifest
+    package="org.eclipse.paho.android.service">
+
+    <application>
+    </application>
+
+</manifest>

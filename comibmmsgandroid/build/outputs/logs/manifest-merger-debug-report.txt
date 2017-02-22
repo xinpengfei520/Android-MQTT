@@ -1,0 +1,116 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:1:1-55:12
+	package
+		ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:3:5-34
+		INJECTED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml
+		INJECTED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml
+		INJECTED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:2:5-51
+	android:versionCode
+		ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml
+		INJECTED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:9:5-68
+	android:name
+		ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:9:22-65
+uses-permission#android.permission.INTERNET
+ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:10:5-67
+	android:name
+		ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:10:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:11:5-81
+	android:name
+		ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:11:22-78
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:12:5-79
+	android:name
+		ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:12:22-76
+application
+ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:14:5-53:19
+MERGED from [EmqttDemo:mqttAndroidLib:unspecified] D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\build\intermediates\exploded-aar\EmqttDemo\mqttAndroidLib\unspecified\AndroidManifest.xml:11:5-15:43
+MERGED from [com.android.support:support-v4:24.2.0] D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:24.2.0] D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.0] D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.0] D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.0] D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:24.2.0] D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\AndroidManifest.xml:25:5-20
+	android:label
+		ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:16:9-41
+	android:uiOptions
+		ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:18:9-53
+	android:icon
+		ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:15:9-45
+	android:allowBackup
+		ADDED from [EmqttDemo:mqttAndroidLib:unspecified] D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\build\intermediates\exploded-aar\EmqttDemo\mqttAndroidLib\unspecified\AndroidManifest.xml:12:9-35
+	android:theme
+		ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:17:9-70
+		REJECTED from [EmqttDemo:mqttAndroidLib:unspecified] D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\build\intermediates\exploded-aar\EmqttDemo\mqttAndroidLib\unspecified\AndroidManifest.xml:15:9-40
+	tools:replace
+		ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:19:9-38
+service#com.ibm.msg.android.service.MqttService
+ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:22:9-64
+	android:name
+		ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:22:18-53
+activity#com.ibm.msg.android.ClientConnections
+ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:25:9-31:20
+	android:name
+		ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:25:19-71
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:26:13-30:29
+action#android.intent.action.MAIN
+ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:27:17-69
+	android:name
+		ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:27:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:29:17-77
+	android:name
+		ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:29:27-74
+activity#com.ibm.msg.android.NewConnection
+ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:34:9-36:78
+	android:label
+		ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:36:13-66
+	android:name
+		ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:35:13-61
+activity#com.ibm.msg.android.Advanced
+ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:40:9-42:72
+	android:label
+		ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:42:13-60
+	android:name
+		ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:41:13-37
+activity#com.ibm.msg.android.LastWill
+ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:45:9-47:73
+	android:label
+		ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:47:13-61
+	android:name
+		ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:46:13-37
+activity#com.ibm.msg.android.ConnectionDetails
+ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:50:9-52:82
+	android:label
+		ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:52:13-70
+	android:name
+		ADDED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml:51:13-46
+uses-sdk
+INJECTED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [EmqttDemo:mqttAndroidLib:unspecified] D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\build\intermediates\exploded-aar\EmqttDemo\mqttAndroidLib\unspecified\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:24.2.0] D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.0\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:24.2.0] D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:24.2.0] D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.0\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-media-compat:24.2.0] D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:24.2.0] D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:24.2.0] D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.0\AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v4:24.2.0] D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.0\AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		INJECTED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml
+		INJECTED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml
+		INJECTED from D:\AndroidStudioProjects\EmqttDemo\comibmmsgandroid\src\main\AndroidManifest.xml

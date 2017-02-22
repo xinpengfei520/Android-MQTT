@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "D:\\AndroidStudioProjects\\EmqttDemo\\comibmmsgandroid\\build\\intermediates\\res\\merged\\debug\\layout\\connection_text_view.xml",
+        "source": "D:\\AndroidStudioProjects\\EmqttDemo\\comibmmsgandroid\\src\\main\\res\\layout\\connection_text_view.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\EmqttDemo\\comibmmsgandroid\\build\\intermediates\\res\\merged\\debug\\layout\\list_view_text_view.xml",
+        "source": "D:\\AndroidStudioProjects\\EmqttDemo\\comibmmsgandroid\\src\\main\\res\\layout\\list_view_text_view.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\EmqttDemo\\comibmmsgandroid\\build\\intermediates\\res\\merged\\debug\\layout\\client_connections.xml",
+        "source": "D:\\AndroidStudioProjects\\EmqttDemo\\comibmmsgandroid\\src\\main\\res\\layout\\client_connections.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\EmqttDemo\\comibmmsgandroid\\build\\intermediates\\res\\merged\\debug\\layout\\activity_publish.xml",
+        "source": "D:\\AndroidStudioProjects\\EmqttDemo\\comibmmsgandroid\\src\\main\\res\\layout\\activity_publish.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\EmqttDemo\\comibmmsgandroid\\build\\intermediates\\res\\merged\\debug\\layout\\activity_new_connection.xml",
+        "source": "D:\\AndroidStudioProjects\\EmqttDemo\\comibmmsgandroid\\src\\main\\res\\layout\\activity_new_connection.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\EmqttDemo\\comibmmsgandroid\\build\\intermediates\\res\\merged\\debug\\layout\\activity_subscribe.xml",
+        "source": "D:\\AndroidStudioProjects\\EmqttDemo\\comibmmsgandroid\\src\\main\\res\\layout\\activity_subscribe.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\EmqttDemo\\comibmmsgandroid\\build\\intermediates\\res\\merged\\debug\\layout\\activity_connection_details.xml",
+        "source": "D:\\AndroidStudioProjects\\EmqttDemo\\comibmmsgandroid\\src\\main\\res\\layout\\activity_connection_details.xml"
+    },
+    {
+        "merged": "D:\\AndroidStudioProjects\\EmqttDemo\\comibmmsgandroid\\build\\intermediates\\res\\merged\\debug\\layout\\activity_advanced.xml",
+        "source": "D:\\AndroidStudioProjects\\EmqttDemo\\comibmmsgandroid\\src\\main\\res\\layout\\activity_advanced.xml"
+    }
+]

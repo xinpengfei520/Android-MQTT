@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/EmqttDemo.iml" filepath="$PROJECT_DIR$/EmqttDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MqttClient/MqttClient.iml" filepath="$PROJECT_DIR$/MqttClient/MqttClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/comibmmsgandroid/comibmmsgandroid.iml" filepath="$PROJECT_DIR$/comibmmsgandroid/comibmmsgandroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mqttAndroidLib/mqttAndroidLib.iml" filepath="$PROJECT_DIR$/mqttAndroidLib/mqttAndroidLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/org.eclipse.paho.android.sample/org.eclipse.paho.android.sample.iml" filepath="$PROJECT_DIR$/org.eclipse.paho.android.sample/org.eclipse.paho.android.sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/org.eclipse.paho.android.service/org.eclipse.paho.android.service.iml" filepath="$PROJECT_DIR$/org.eclipse.paho.android.service/org.eclipse.paho.android.service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/paho.mqtt.android.example/paho.mqtt.android.example.iml" filepath="$PROJECT_DIR$/paho.mqtt.android.example/paho.mqtt.android.example.iml" />
+    </modules>
+  </component>
+</project>
