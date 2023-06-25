@@ -1,5 +1,6 @@
 package com.xpf.emqttdemo;
 
+import android.annotation.SuppressLint;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.content.Context;
@@ -33,6 +34,7 @@ import static com.xpf.emqttdemo.MqttConstants.userName;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    private static final String TAG = "MainActivity";
     private EditText etTopic;
     private Button btnSub;
     private EditText etContent;
@@ -44,7 +46,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private String mTopic = "World"; // 默认话题为"World"
     private ScheduledExecutorService scheduler;
 
-    private Handler handler = new Handler() {
+    @SuppressLint("HandlerLeak")
+    private final Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
@@ -61,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 manager.notify(i++, notification);
 
             } else if (msg.what == 2) {
-                System.out.println("连接成功");
+                Log.d(TAG, "连接成功");
                 Toast.makeText(MainActivity.this, "连接成功", Toast.LENGTH_SHORT).show();
                 try {
                     client.subscribe(mTopic, 1);
@@ -70,7 +73,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
             } else if (msg.what == 3) {
                 Toast.makeText(MainActivity.this, "连接失败，系统正在重连", Toast.LENGTH_SHORT).show();
-                System.out.println("连接失败，系统正在重连");
+                Log.d(TAG, "连接失败，系统正在重连");
             }
         }
     };
@@ -116,26 +119,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 @Override
                 public void connectionLost(Throwable cause) {
                     // 连接丢失后，一般在这里面进行重连
-                    System.out.println("connectionLost----------");
+                    Log.d(TAG, "connectionLost----------");
                 }
 
                 @Override
                 public void deliveryComplete(IMqttDeliveryToken token) {
                     //publish后会执行到这里
-                    System.out.println("deliveryComplete---------"
-                            + token.isComplete());
+                    Log.d(TAG, "deliveryComplete---------" + token.isComplete());
                 }
 
                 @Override
                 public void messageArrived(String topicName, MqttMessage message)
                         throws Exception {
                     // subscribe后得到的消息会执行到这里面
-                    System.out.println("messageArrived----------");
+                    Log.d(TAG, "messageArrived----------");
                     Message msg = new Message();
                     msg.what = 1;
                     msg.obj = topicName + ":" + message.toString();
                     handler.sendMessage(msg);
-                    Log.e("TAG", "messageArrived" + message.toString());
+                    Log.e(TAG, "messageArrived" + message.toString());
                 }
             });
         } catch (Exception e) {
@@ -146,7 +148,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void startReconnect() {
         scheduler = Executors.newSingleThreadScheduledExecutor();
         scheduler.scheduleAtFixedRate(new Runnable() {
-
             @Override
             public void run() {
                 if (!client.isConnected()) {

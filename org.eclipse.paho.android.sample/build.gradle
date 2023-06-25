@@ -25,29 +25,9 @@ android {
     }
 }
 
-repositories {
-    maven { url "https://repo.eclipse.org/content/repositories/paho-releases/" }
-}
-
-
-
 dependencies {
-    //compile fileTree(dir: '../org.eclipse.paho.android/service/libs', excludes: ["org.eclipse.paho.client.mqttv3-${rootProject.ext.clientVersion}.jar"], include: '')
-    compile "com.android.support:appcompat-v7:24.2.0"
-    compile "com.android.support:recyclerview-v7:24.2.0"
-    compile "org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.1.0"
-    compile(project(':org.eclipse.paho.android.service')) {
-        //exclude module: "org.eclipse.paho.client.mqttv3"
-        transitive = true
-    }
+    implementation "com.android.support:appcompat-v7:24.2.0"
+    implementation "com.android.support:recyclerview-v7:24.2.0"
+    implementation "org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.1.0"
+    implementation 'org.eclipse.paho:org.eclipse.paho.android.service:1.1.1'
 }
-
-//task publishAPK(type: Copy) {
-//    from file("${project.buildDir}/outputs/apk/" + rootProject.ext.sampleArchivesBaseName + "-debug.apk");
-//    into '/shared/technology/paho/Android/' + rootProject.ext.sampleVersion + '/debug/';
-//}
-
-//configurations.compile.exclude module: 'org.eclipse.paho.client.mqttv3'
-//task debug << {
-//    configurations.compile.each { println it}
-//}

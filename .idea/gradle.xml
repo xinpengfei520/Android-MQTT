@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="LOCAL" />
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="gradleHome" value="D:\Android_Developer_Tools\Android Studio\gradle\gradle-2.14.1" />
+        <option name="gradleJvm" value="Embedded JDK" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
@@ -14,11 +16,9 @@
             <option value="$PROJECT_DIR$/comibmmsgandroid" />
             <option value="$PROJECT_DIR$/mqttAndroidLib" />
             <option value="$PROJECT_DIR$/org.eclipse.paho.android.sample" />
-            <option value="$PROJECT_DIR$/org.eclipse.paho.android.service" />
             <option value="$PROJECT_DIR$/paho.mqtt.android.example" />
           </set>
         </option>
-        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>

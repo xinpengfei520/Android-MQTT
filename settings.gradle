@@ -1,3 +1,18 @@
-include ':app', ':org.eclipse.paho.android.sample', ':org.eclipse.paho.android.service', ':paho.mqtt.android.example', ':MqttClient'
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://repo.eclipse.org/content/repositories/paho-releases/" }
+    }
+}
+include ':app', ':org.eclipse.paho.android.sample', ':paho.mqtt.android.example', ':MqttClient'
 include ':mqttAndroidLib'
 include ':comibmmsgandroid'

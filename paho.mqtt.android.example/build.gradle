@@ -25,25 +25,15 @@ android {
     }
 }
 
-repositories {
-    maven { url "https://repo.eclipse.org/content/repositories/paho-releases/" }
-}
-
-
 dependencies {
-    compile fileTree(dir: 'libs', excludes: ["org.eclipse.paho.client.mqttv3-1.1.0.jar"], include: '*.jar')
-    testCompile 'junit:junit:4.12'
-    compile "com.android.support:appcompat-v7:24.2.0"
-    compile "com.android.support:design:24.2.0"
-    compile "com.android.support:recyclerview-v7:24.2.0"
-    compile "org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.1.0"
-    compile (project(':org.eclipse.paho.android.service')){
-        //exclude module: "org.eclipse.paho.client.mqttv3"
-        transitive=true
-    }
+    implementation fileTree(dir: 'libs', excludes: ["org.eclipse.paho.client.mqttv3-1.1.0.jar"], include: '*.jar')
+    testImplementation 'junit:junit:4.12'
+    implementation "com.android.support:appcompat-v7:24.2.0"
+    implementation "com.android.support:design:24.2.0"
+    implementation "com.android.support:recyclerview-v7:24.2.0"
+    implementation "org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.1.0"
+    implementation 'org.eclipse.paho:org.eclipse.paho.android.service:1.1.1'
+    implementation 'com.squareup.okhttp3:okhttp:4.10.0'
+    implementation 'org.bouncycastle:bcprov-jdk15on:1.70'
+    implementation 'com.google.code.gson:gson:2.10.1'
 }
-
-//configurations.compile.exclude module: 'org.eclipse.paho.client.mqttv3'
-//task debug << {
-//    configurations.compile.each { println it}
-//}
